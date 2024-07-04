@@ -25,4 +25,4 @@ Based on the users mental problems, the system will connect users with other use
 Besides having a listening ear, patients ought to be empathised with not just sympathising with them. A user will be able to reeive information about any neccessary medical resources - Hospitals, articles, therapists where they can further get the supporrt needed.
 
 ### Mood tracking ###
-Based on user input, users will receive a message informing them about their mood and 
+Based on user input, users will receive a message informing them about their mood and valuable insights into their emotional well-being.
