@@ -1,0 +1,31 @@
+{
+  "name": "mental-healthbot-dekuthack",
+  "version": "1.0.0",
+  "description": "A web application that allows Mental Health Patients to chat and get resources",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "dev",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stephen100Mwangi/Mental-health-Bot-DEKUTHACK.git"
+  },
+  "author": "Group16-DEKUT_Hack",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stephen100Mwangi/Mental-health-Bot-DEKUTHACK/issues"
+  },
+  "homepage": "https://github.com/Stephen100Mwangi/Mental-health-Bot-DEKUTHACK#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.4.5",
+    "nodemon": "^3.1.4",
+    "socket.io": "^4.7.5"
+  }
+}

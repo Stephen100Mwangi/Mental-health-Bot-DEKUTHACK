@@ -1,0 +1,144 @@
+{
+  "MentalHospitals": [
+    {
+      "id": "1",
+      "name": "Better Help",
+      "link": "https://www.betterhelp.com/",
+      "description": "The world's largest therapy service. 100% online.",
+      "logo": "https://www.betterhelp.com/static/97c3c5b8478d981fa44f27d4cdeae1c1/7c202/betterhelp-logo.svg"
+    },
+    {
+      "id": "2",
+      "name": "Talkspace",
+      "link": "https://www.talkspace.com/",
+      "description": "Online therapy with licensed therapists via text, audio, and video.",
+      "logo": "https://www.talkspace.com/wp-content/themes/talkspace/images/talkspace-logo.svg"
+    },
+    {
+      "id": "3",
+      "name": "National Alliance on Mental Illness (NAMI)",
+      "link": "https://www.nami.org/",
+      "description": "Provides advocacy, education, support, and public awareness so that all individuals and families affected by mental illness can build better lives.",
+      "logo": "https://www.nami.org/NAMI/media/NAMI-Media/Logos/NAMI_Logo_Green-RGB_600x80.png"
+    },
+    {
+      "id": "4",
+      "name": "Mental Health America (MHA)",
+      "link": "https://www.mhanational.org/",
+      "description": "Dedicated to addressing the needs of those living with mental illness and to promoting the overall mental health of all Americans.",
+      "logo": "https://www.mhanational.org/sites/default/files/styles/logo/public/MHA_Logo_0.png"
+    },
+    {
+      "id": "5",
+      "name": "7 Cups",
+      "link": "https://www.7cups.com/",
+      "description": "Free, anonymous, and confidential text chat with trained listeners and therapists.",
+      "logo": "https://www.7cups.com/static/website/images/7cups-logo-full.svg"
+    },
+    {
+      "id": "6",
+      "name": "Crisis Text Line",
+      "link": "https://www.crisistextline.org/",
+      "description": "Free, 24/7 support for those in crisis. Text with a trained crisis counselor.",
+      "logo": "https://www.crisistextline.org/wp-content/themes/crisistextline/images/logo.svg"
+    },
+    {
+      "id": "7",
+      "name": "Psychology Today",
+      "link": "https://www.psychologytoday.com/",
+      "description": "Find a therapist, psychiatrist, support group, or treatment facility.",
+      "logo": "https://www.psychologytoday.com/sites/default/files/2020-11/pt-logo-social-card.png"
+    },
+    {
+      "id": "8",
+      "name": "Headspace",
+      "link": "https://www.headspace.com/",
+      "description": "Meditation and mindfulness app to improve mental well-being.",
+      "logo": "https://www.headspace.com/inc/assets/images/logo/apple-touch-icon.png"
+    },
+    {
+      "id": "9",
+      "name": "Calm",
+      "link": "https://www.calm.com/",
+      "description": "App for sleep, meditation, and relaxation.",
+      "logo": "https://www.calm.com/favicon-32x32.png?v=20220125"
+    },
+    {
+      "id": "10",
+      "name": "Substance Abuse and Mental Health Services Administration (SAMHSA)",
+      "link": "https://www.samhsa.gov/",
+      "description": "Provides information on mental health and substance abuse treatment services.",
+      "logo": "https://www.samhsa.gov/sites/all/themes/samhsa_3.0/images/logo.svg"
+    },
+    {
+      "id": "11",
+      "name": "National Institute of Mental Health (NIMH)",
+      "link": "https://www.nimh.nih.gov/",
+      "description": "The lead federal agency for research on mental disorders.",
+      "logo": "https://www.nimh.nih.gov/themes/custom/nimh/logo.png"
+    },
+    {
+      "id": "12",
+      "name": "Suicide Prevention Lifeline",
+      "link": "https://suicidepreventionlifeline.org/",
+      "description": "Provides free and confidential support for people in distress, prevention, and crisis resources.",
+      "logo": "https://suicidepreventionlifeline.org/wp-content/themes/suicide/assets/images/logo/NSPL_Logo_v2.svg"
+    },
+    {
+      "id": "13",
+      "name": "Sanvello",
+      "link": "https://www.sanvello.com/",
+      "description": "On-demand help for stress, anxiety, and depression. A mobile app offering therapy, coaching, coping tools, and more.",
+      "logo": "https://www.sanvello.com/wp-content/uploads/2020/03/sanvello_logo.svg"
+    },
+    {
+      "id": "14",
+      "name": "Teen Line",
+      "link": "https://teenlineonline.org/",
+      "description": "Provides support, resources, and hope to young people through a hotline of professionally trained teen counselors.",
+      "logo": "https://teenlineonline.org/wp-content/themes/teenline/images/TeenLine_Logo.svg"
+    },
+    {
+      "id": "15",
+      "name": "The Trevor Project",
+      "link": "https://www.thetrevorproject.org/",
+      "description": "Provides crisis intervention and suicide prevention services to LGBTQ+ youth.",
+      "logo": "https://www.thetrevorproject.org/wp-content/themes/trevorproject2020/images/trevor-logo.svg"
+    },
+    {
+      "id": "16",
+      "name": "Jed Foundation",
+      "link": "https://www.jedfoundation.org/",
+      "description": "A nonprofit that protects emotional health and prevents suicide for teens and young adults.",
+      "logo": "https://www.jedfoundation.org/wp-content/themes/jedtheme/images/jed-logo.svg"
+    },
+    {
+      "id": "17",
+      "name": "Anxiety and Depression Association of America (ADAA)",
+      "link": "https://adaa.org/",
+      "description": "Provides information on prevention, treatment, and management of anxiety, depression, and related disorders.",
+      "logo": "https://adaa.org/themes/adaa/images/adaa-logo.svg"
+    },
+    {
+      "id": "18",
+      "name": "Depression and Bipolar Support Alliance (DBSA)",
+      "link": "https://www.dbsalliance.org/",
+      "description": "Provides hope, help, support, and education to improve the lives of people who have mood disorders.",
+      "logo": "https://www.dbsalliance.org/wp-content/themes/dbsa/images/logo.svg"
+    },
+    {
+      "id": "19",
+      "name": "National Eating Disorders Association (NEDA)",
+      "link": "https://www.nationaleatingdisorders.org/",
+      "description": "Supports individuals and families affected by eating disorders and serves as a catalyst for prevention, cures, and access to quality care.",
+      "logo": "https://www.nationaleatingdisorders.org/sites/default/files/NEDA_LOGO_FINAL_RGB.png"
+    },
+    {
+      "id": "20",
+      "name": "Rape, Abuse & Incest National Network (RAINN)",
+      "link": "https://www.rainn.org/",
+      "description": "The nation's largest anti-sexual violence organization.",
+      "logo": "https://www.rainn.org/sites/default/files/rainn_logo_large.jpg"
+    }
+  ]
+}
