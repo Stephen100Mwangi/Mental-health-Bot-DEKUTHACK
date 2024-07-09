@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('journalBG3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(180, 240, 240, 0.6);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+.journal-entry-form,
+.journal-entries {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none; 
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+    /*width: 100%;  */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #5DADE2;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #3498DB;
+}
+
+.journal-entries table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.journal-entries th,
+.journal-entries td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.journal-entries th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.journal-entries td {
+    background-color: #fff;
+}
+
+.journal-entries .mood {
+    font-style: italic;
+    color: #666;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 3px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.5); 
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #333;
+    z-index: 1000; 
+}
