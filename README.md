@@ -48,5 +48,11 @@ To run the app use:
    2. Run the command `npm run dev`. This command will launch you app on developer mode. Since the frontend is build on Vite, you app will most likely run on 
       `http://localhost:5173/` However, if the port is in use, adifferent port will be used.
 
+## Testing ##
+To test the application use the logins
+1. `steve@gmail.com` for the email
+2. `12345678` for the password
+
+
 
 Now you app is app and running
