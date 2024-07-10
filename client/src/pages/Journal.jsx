@@ -12,7 +12,7 @@ const Journal = () => {
 
   useEffect(() => {
     fetchEntries();
-  }, []);
+  });
 
   const fetchEntries = async () => {
     try {
