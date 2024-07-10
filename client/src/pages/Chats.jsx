@@ -148,8 +148,8 @@ const Chats = () => {
 
 
   return (
-    <div className="flex w-full items-start justify-start h-[85vh] overflow-clip">
-      <div className="flex flex-col space-y-5 h-[100%] overflow-clip p-2 bg-button">
+    <div className="flex justify-start items-start h-[85vh]">
+      <div className="flex w-2/6 flex-col justify-start items-start space-y-5 h-[100%] overflow-clip p-2 bg-button">
         <Toaster position="top-left"></Toaster>
         <div className="w-full flex justify-center items-center bg-white px-4"><input placeholder="Search to start chat" type="text" value={searchTerm} onChange={(e)=>setTerm(e.target.value)} className="p-2 px-0 rounded-sm outline-none" /><IoIosSearch /></div>
         <div className="w-full h-[90%] overflow-scroll px-0 no-scrollbar">
@@ -160,7 +160,7 @@ const Chats = () => {
           ))}
         </div>
       </div>
-      <div className="h-[100%] p-2 bg-card relative overflow-clip">
+      <div className="h-[100%] w-4/6 p-2 flex flex-col justify-start items-center bg-card relative overflow-clip">
         <div className="flex items-center space-x-20 justify-between px-8">
           <div className="flex items-center justify-center space-x-5">
             <div><IoMdPerson className="text-button text-2xl"/></div>
@@ -173,7 +173,7 @@ const Chats = () => {
             <p>Chatting with {guestName}</p>
           </div>
         </div>
-         <div className="p-4 flex flex-col space-y-3 h-[calc(100% - 80px)] overflow-y-auto">
+        <div className="p-4 flex flex-col space-y-3 h-[calc(100% - 80px)] overflow-y-auto">
           {messages.map((message) => (
             <div key={message._id}>
               {message.sender._id === loggedInUser._id ? (

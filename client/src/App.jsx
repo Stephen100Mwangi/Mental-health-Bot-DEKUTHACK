@@ -12,7 +12,7 @@ import ProtectedRoute from "./pages/ProtectedRoute"
 
 const App = () => {
   return (
-    <div className='w-full flex flex-col min-h-screen bg-card justify-start items-start'>
+    <div className='w-full flex flex-col min-h-screen bg-card'>
       <BrowserRouter>
       <NavBar />
       <Routes>

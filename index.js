@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 import http from 'http';
 import {Server} from 'socket.io';
 
+import Messages from './server/models/Messages.js';
 import FetchUserRoute from './server/routes/FetchUsers.js';
 import loginRouter from './server/routes/LoginUser.js';
 import userIDRoute from './server/routes/fetchUserById.js';
@@ -12,6 +13,8 @@ import SendMessageRoute from './server/routes/sendMessage.js';
 import CreateUserRouter from './server/routes/CreateUser.js';
 import chatRoute from './server/routes/chatRoute.js';
 import MessageRoute from './server/routes/MessageRouter.js';
+import SetJournalRoute from './server/routes/SetJournalRoute.js';
+import FetchJournalRoute from './server/routes/FetchJournal.js';
 
 dotenv.config ();
 
@@ -62,7 +65,7 @@ io.on ('connection', socket => {
     }
 
     try {
-      const message = await Message.create ({
+      const message = await Messages.create ({
         sender: userId,
         content,
         chat: chatId,
@@ -88,3 +91,5 @@ app.use (userIDRoute);
 app.use (SendMessageRoute);
 app.use (MessageRoute);
 app.use (chatRoute);
+app.use (SetJournalRoute);
+app.use (FetchJournalRoute);
