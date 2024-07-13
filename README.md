@@ -30,3 +30,29 @@ Besides having a listening ear, patients ought to be empathized with, not just s
 ### Mood tracking ###
 
 Based on user input, users will receive a message informing them about their mood and valuable insights into their emotional well-being.
+
+## Running ##
+To run the app use:
+1. Navigate to server directory
+     1. cd server
+     2. run the command `npm run start` This will start the backend using the express framework. The server is running using `nodemon`. Therefoore you will not need to 
+        restart the server as the `nodemon` does that for you
+     3. While still on the termial, open another tab of the server and run the command `npx json-server --watch data/Resources.json --port:8800`. This command will start the 
+        JSON mock server. This is where all resources for hospitals and Therapists are stored. This is mmeant to connect the patient with the right resources.
+   
+ 
+2. Navigate to client directory
+   To run the client (friontend side) navigate to the client folder
+   1. while in the root directory `PS S:\Mental-HealthBot-DekutHack>`.The path may be different but the root directory is `Mental-HealthBot-DekutHack` run the command
+       `cd client` This will naviagte you to the frontend side.
+   2. Run the command `npm run dev`. This command will launch you app on developer mode. Since the frontend is build on Vite, you app will most likely run on 
+      `http://localhost:5173/` However, if the port is in use, adifferent port will be used.
+
+## Testing ##
+To test the application use the logins
+1. `steve@gmail.com` for the email
+2. `12345678` for the password
+
+
+
+Now you app is app and running

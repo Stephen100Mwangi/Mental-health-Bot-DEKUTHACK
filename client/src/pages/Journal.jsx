@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import Button from '../components/Button';
@@ -30,6 +31,25 @@ const Journal = () => {
         console.log(filteredData);
         setEntries(filteredData);
       })
+=======
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import '../public/css/styles.css';
+
+const Journal = () => {
+  const [entries, setEntries] = useState([]);
+  const [entryText, setEntryText] = useState('');
+  const [mood, setMood] = useState('');
+
+  useEffect(() => {
+    fetchEntries();
+  }, []);
+
+  const fetchEntries = async () => {
+    try {
+      const response = await axios.get('/api/journal');
+      setEntries(response.data);
+>>>>>>> 0821b78af52c75bc847fbe2457a865836ce36c1e
     } catch (error) {
       console.error('Error fetching entries:', error);
     }
@@ -38,6 +58,7 @@ const Journal = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+<<<<<<< HEAD
       const newEntry = { username:user._id ,mood,entry };
       fetch("http://localhost:5680/journal/createJournal",{
         method: 'POST',
@@ -52,6 +73,10 @@ const Journal = () => {
           toast.success("Journal added successfully")
         }
       })
+=======
+      const newEntry = { entryText, mood };
+      await axios.post('/api/journal', newEntry);
+>>>>>>> 0821b78af52c75bc847fbe2457a865836ce36c1e
       setEntryText('');
       setMood('');
       fetchEntries();
@@ -61,6 +86,7 @@ const Journal = () => {
   };
 
   return (
+<<<<<<< HEAD
     <div className='flex w-full items-center justify-center'>
     <div id="journal" className="flex justify-center items-center flex-col shadow-2xl p-8 mt-20 rounded-sm bg-card mb-20 space-y-6 min-w-96">
 
@@ -80,6 +106,20 @@ const Journal = () => {
             cols="40"
             required
             value={entry}
+=======
+    <div className="container">
+      <h1>JOURNAL YOUR THOUGHTS</h1>
+      <div className="journal-entry-form">
+        <h2>New Journal Entry</h2>
+        <form id="journalForm" onSubmit={handleSubmit}>
+          <label htmlFor="entryText">Your Entry</label>
+          <textarea
+            id="entryText"
+            name="entryText"
+            rows="5"
+            required
+            value={entryText}
+>>>>>>> 0821b78af52c75bc847fbe2457a865836ce36c1e
             onChange={(e) => setEntryText(e.target.value)}
           />
 
@@ -99,6 +139,7 @@ const Journal = () => {
             <option value="angry">Angry</option>
           </select>
 
+<<<<<<< HEAD
           <div type="submit" className='flex my-20 justify-center items-center w-full'><Button text_Content='Submit'/></div>
         </form>
       </div>
@@ -130,3 +171,35 @@ const Journal = () => {
 };
 
 export default Journal;
+=======
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div className="journal-entries">
+        <h2>Previous Entries</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Entry</th>
+              <th>Mood</th>
+            </tr>
+          </thead>
+          <tbody id="entryList">
+            {entries.map((entry, index) => (
+              <tr key={index}>
+                <td>{new Date(entry.createdAt).toLocaleString()}</td>
+                <td>{entry.entryText}</td>
+                <td>{entry.mood}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+};
+
+export default Journal;
+
+>>>>>>> 0821b78af52c75bc847fbe2457a865836ce36c1e
